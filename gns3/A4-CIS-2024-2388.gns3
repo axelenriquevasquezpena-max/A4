@@ -1,0 +1,426 @@
+{
+  "auto_close": true,
+  "auto_open": false,
+  "auto_start": false,
+  "drawing_grid_size": 25,
+  "grid_size": 75,
+  "name": "A4-CIS-2024-2388",
+  "project_id": "1fce01ae-aa13-4e79-baad-6a8b77da2a8e",
+  "revision": 9,
+  "scene_height": 1000,
+  "scene_width": 2000,
+  "show_grid": false,
+  "show_interface_labels": false,
+  "show_layers": false,
+  "snap_to_grid": false,
+  "supplier": null,
+  "topology": {
+    "computes": [],
+    "drawings": [
+      {
+        "drawing_id": "5cc90dda-968c-4abe-baae-ae538d491427",
+        "locked": false,
+        "rotation": 0,
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1100\" height=\"145\"><rect width=\"1100\" height=\"145\" rx=\"12\" fill=\"#152a43\"/><g fill=\"white\" font-family=\"Arial\" font-size=\"20\"><text x=\"20\" y=\"35\">A4 · CIS IOS 12 · Axel Enrique Vasquez Pena · 2024-2388</text><text x=\"20\" y=\"70\">ADMIN: Kali 10.24.23.10/24 — R1 Fa0/0 10.24.23.1/24</text><text x=\"20\" y=\"100\">CLIENTES: R1 Fa0/1 10.24.88.1/24 — VPCS 10.24.88.20/24</text><text x=\"20\" y=\"130\">Objetivo: SSHv2, sin Telnet, timeout, AUX/CDP desactivados</text></g></svg>",
+        "x": -500,
+        "y": -225,
+        "z": 0
+      }
+    ],
+    "links": [
+      {
+        "filters": {},
+        "link_id": "d0ece822-3bae-40e7-923a-17f769052b43",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "07e4c18c-8eef-4c48-a1aa-854e9578b617",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "886e44b5-1d28-4b33-b1b0-957d7a152cc9",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "7c86a5cc-4dba-4b23-8efe-894211f94ec4",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/1"
+            },
+            "node_id": "886e44b5-1d28-4b33-b1b0-957d7a152cc9",
+            "port_number": 1
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "59e37814-f2b4-44c0-afae-5fe15197dadf",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "976f4cbc-757d-42e6-a094-c095dcd58bea",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/1"
+            },
+            "node_id": "59e37814-f2b4-44c0-afae-5fe15197dadf",
+            "port_number": 1
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "e4fa72ce-d7f6-4c2a-95da-5b8f747022bb",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "f47baf5a-5637-4bd9-b9b0-de6e62e4a054",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/1"
+            },
+            "node_id": "e4fa72ce-d7f6-4c2a-95da-5b8f747022bb",
+            "port_number": 1
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "2213d9f0-fe5e-481e-9490-ad4c8c0e0c07",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      }
+    ],
+    "nodes": [
+      {
+        "compute_id": "vm",
+        "console": 5000,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "rotation": 0,
+          "style": null,
+          "text": "R1-AXEL",
+          "x": null,
+          "y": -32
+        },
+        "locked": false,
+        "name": "R1-AXEL",
+        "node_id": "59e37814-f2b4-44c0-afae-5fe15197dadf",
+        "node_type": "dynamips",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "auto_delete_disks": true,
+          "aux": null,
+          "clock_divisor": 8,
+          "disk0": 0,
+          "disk1": 0,
+          "dynamips_id": 1,
+          "exec_area": 64,
+          "idlemax": 500,
+          "idlepc": "0x606eb07c",
+          "idlesleep": 30,
+          "image": "c2691-[2]advsecurityk9-mz.124-25d 1.image",
+          "image_md5sum": "a19e12ce8ec03401e6f4c253d88d495b",
+          "iomem": 5,
+          "mac_addr": "c001.23f8.0000",
+          "mmap": true,
+          "nvram": 256,
+          "platform": "c2691",
+          "ram": 256,
+          "slot0": "GT96100-FE",
+          "slot1": null,
+          "sparsemem": true,
+          "system_id": "FTX0945W0MY",
+          "usage": "",
+          "wic0": null,
+          "wic1": null,
+          "wic2": null
+        },
+        "symbol": ":/symbols/router.svg",
+        "template_id": "4c10b49e-fe43-464b-85b4-493f75285bb0",
+        "width": 66,
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "none",
+        "custom_adapters": [],
+        "first_port_name": "",
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": null,
+          "text": "KALI-ADMIN",
+          "x": null,
+          "y": -40
+        },
+        "locked": false,
+        "name": "KALI-ADMIN",
+        "node_id": "07e4c18c-8eef-4c48-a1aa-854e9578b617",
+        "node_type": "vmware",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapter_type": "e1000",
+          "adapters": 1,
+          "headless": false,
+          "linked_clone": true,
+          "on_close": "power_off",
+          "usage": "",
+          "use_any_adapter": true,
+          "vmx_path": "C:\\Virtual Machines\\Kali Linux\\Kali Linux.vmx"
+        },
+        "symbol": ":/symbols/vmware_guest.svg",
+        "template_id": "e7d0c5f1-1ef8-4382-a557-011bbd897f00",
+        "width": 65,
+        "x": -450,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": 5000,
+        "console_auto_start": false,
+        "console_type": "none",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": null,
+          "text": "SW-ADMIN",
+          "x": null,
+          "y": -26
+        },
+        "locked": false,
+        "name": "SW-ADMIN",
+        "node_id": "886e44b5-1d28-4b33-b1b0-957d7a152cc9",
+        "node_type": "ethernet_switch",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "ports_mapping": [
+            {
+              "name": "Ethernet0",
+              "port_number": 0,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet1",
+              "port_number": 1,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet2",
+              "port_number": 2,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet3",
+              "port_number": 3,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet4",
+              "port_number": 4,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet5",
+              "port_number": 5,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet6",
+              "port_number": 6,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet7",
+              "port_number": 7,
+              "type": "access",
+              "vlan": 1
+            }
+          ]
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": -225,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": 5001,
+        "console_auto_start": false,
+        "console_type": "none",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": null,
+          "text": "SW-CLIENTES",
+          "x": null,
+          "y": -26
+        },
+        "locked": false,
+        "name": "SW-CLIENTES",
+        "node_id": "e4fa72ce-d7f6-4c2a-95da-5b8f747022bb",
+        "node_type": "ethernet_switch",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "ports_mapping": [
+            {
+              "name": "Ethernet0",
+              "port_number": 0,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet1",
+              "port_number": 1,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet2",
+              "port_number": 2,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet3",
+              "port_number": 3,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet4",
+              "port_number": 4,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet5",
+              "port_number": 5,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet6",
+              "port_number": 6,
+              "type": "access",
+              "vlan": 1
+            },
+            {
+              "name": "Ethernet7",
+              "port_number": 7,
+              "type": "access",
+              "vlan": 1
+            }
+          ]
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": 225,
+        "y": 0,
+        "z": 1
+      },
+      {
+        "compute_id": "local",
+        "console": 5002,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": null,
+          "text": "PC-CLIENTE",
+          "x": null,
+          "y": -40
+        },
+        "locked": false,
+        "name": "PC-CLIENTE",
+        "node_id": "2213d9f0-fe5e-481e-9490-ad4c8c0e0c07",
+        "node_type": "vpcs",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {},
+        "symbol": ":/symbols/vpcs_guest.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 450,
+        "y": 0,
+        "z": 1
+      }
+    ]
+  },
+  "type": "topology",
+  "variables": null,
+  "version": "2.2.61",
+  "zoom": 100
+}

@@ -6,7 +6,7 @@
 
 **Autor:** Axel Enrique Vasquez Peña · **Matrícula:** 2024-2388 · **Práctica:** A4
 
-**Estado:** materiales preparados; ejecución y evidencias reales pendientes.
+**Estado:** topología creada en GNS3 (5 nodos, 4 enlaces); configuración de los equipos, ejecución del hardening y evidencias reales pendientes.
 
 ## Propósito
 
@@ -25,6 +25,8 @@ flowchart LR
 ```
 
 ## Documentación
+
+**Proyecto GNS3:** [A4-CIS-2024-2388.gns3](gns3/A4-CIS-2024-2388.gns3). Consultar [cómo abrirlo](gns3/README.md). La topología también está creada en la carpeta local de proyectos de GNS3.
 
 1. [Montaje paso a paso](docs/01-montaje.md)
 2. [Benchmark, controles y justificación](docs/02-controles-cis.md)

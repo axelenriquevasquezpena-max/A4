@@ -13,6 +13,8 @@ De `2024-2388` se toman `24`, `23` y `88`. Se utiliza el bloque privado 10.0.0.0
 
 ## Crear y conectar
 
+**En el equipo de Axel, estos pasos de creación y cableado ya están realizados.** Abrir `A4-CIS-2024-2388` en GNS3 según [estas instrucciones](../gns3/README.md) y continuar desde el paso 5. Los pasos 1–4 sirven para reproducir el diseño en otro proyecto.
+
 1. Crear proyecto `Axel-2024-2388-CIS-IOS12`.
 2. Arrastrar un **c2691**, dos **Ethernet switch**, **Kali Linux** y **VPCS**.
 3. Renombrar: `R1-AXEL`, `SW-ADMIN`, `SW-CLIENTES`, `KALI-ADMIN`, `PC-CLIENTE`.
