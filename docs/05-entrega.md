@@ -21,9 +21,9 @@ Subir a YouTube, comprobar acceso desde una ventana sin sesión y colocar el enl
 
 ## TXT obligatorio
 
-Falta confirmar el número de práctica. Crear solo cuando se conozca, con el patrón:
+Práctica confirmada: **A4**. Archivo creado en la raíz del repositorio:
 
-`AxelEnriqueVasquezPena_20242388_<P#>.txt`
+`AxelEnriqueVasquezPena_20242388_A4.txt`
 
 Se normalizan espacios, ñ y guion de matrícula para seguir el ejemplo de la consigna. Confirmar si el docente exige conservar el guion; en ese caso usar `2024-2388`.
 
@@ -32,7 +32,7 @@ Contenido:
 ```text
 Nombre: Axel Enrique Vasquez Peña
 Matrícula: 2024-2388
-Práctica: REEMPLAZAR
+Práctica: A4
 Repositorio: https://github.com/axelenriquevasquezpena-max/cis-c2691-2024-2388
 Video: REEMPLAZAR_POR_ENLACE_YOUTUBE
 ```

@@ -4,7 +4,7 @@
 
 # Hardening de Cisco IOS 12 en GNS3
 
-**Autor:** Axel Enrique Vasquez Peña · **Matrícula:** 2024-2388
+**Autor:** Axel Enrique Vasquez Peña · **Matrícula:** 2024-2388 · **Práctica:** A4
 
 **Estado:** materiales preparados; ejecución y evidencias reales pendientes.
 
@@ -51,7 +51,7 @@ Credenciales solicitadas de forma interactiva. Ejecutar desde Kali, con conectiv
 - Benchmark histórico adecuado a IOS 12; referencia oficial: [NIST, checklist 1127](https://ncp.nist.gov/checklist/1127).
 - La imagen local encontrada se llama `c2691-[2]advsecurityk9-mz.124-25d 1.image`. Confirmar versión real con `show version`.
 - Los diagramas son diseños, las configuraciones iniciales son plantillas y los tests son pruebas de software. No sustituyen evidencia de GNS3.
-- Faltan capturas reales, informes del router, running-configs reales, video y número de práctica. Véase [entrega](docs/05-entrega.md).
+- Faltan capturas reales, informes del router, running-configs reales y video. Véase [entrega](docs/05-entrega.md).
 - IOS 12.4 es una plataforma antigua para este laboratorio aislado; estos ajustes no modernizan sus algoritmos criptográficos.
 
 ## Pruebas del software
