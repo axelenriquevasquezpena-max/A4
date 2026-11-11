@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320">
+<rect width="1000" height="320" fill="#101d30"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#eef5ff">
+<text x="500" y="35" font-size="23">Laboratorio CIS · Axel Vasquez · 2024-2388</text>
+<g stroke="#63c8ef" stroke-width="4"><path d="M190 150H390M610 150H810"/></g>
+<g fill="#233b57" stroke="#63c8ef" stroke-width="2"><rect x="30" y="100" width="180" height="110" rx="12"/><rect x="390" y="90" width="220" height="130" rx="12"/><rect x="790" y="100" width="180" height="110" rx="12"/></g>
+<text x="120" y="130" font-size="19">Kali · ADMIN</text><text x="120" y="160">10.24.23.10/24</text><text x="120" y="185">GW 10.24.23.1</text>
+<text x="300" y="130">Switch ADMIN</text><text x="700" y="130">Switch CLIENTES</text>
+<text x="500" y="120" font-size="19">R1-AXEL · c2691</text><text x="500" y="150">Fa0/0 · 10.24.23.1/24</text><text x="500" y="175">Fa0/1 · 10.24.88.1/24</text><text x="500" y="200">Cisco IOS 12.4</text>
+<text x="880" y="130" font-size="19">VPCS · CLIENTE</text><text x="880" y="160">10.24.88.20/24</text><text x="880" y="185">GW 10.24.88.1</text>
+<text x="500" y="263">Objetivo: SSHv2, sin Telnet, sesiones limitadas, AUX y CDP desactivados</text>
+<text x="500" y="292" fill="#a7bedb">Diagrama de diseño; no representa evidencia de ejecución.</text>
+</g></svg>

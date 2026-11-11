@@ -1,0 +1,41 @@
+! PLANTILLA INICIAL, NO ES UN RUNNING-CONFIG OBTENIDO DEL ROUTER.
+! Sustituir los dos valores CAMBIAR antes de pegar en consola.
+! Estado inicial deliberadamente permisivo para comparar antes/despues.
+enable
+configure terminal
+hostname R1-AXEL
+ip domain-name axel.lab
+enable secret CAMBIAR_CLAVE_ENABLE
+username axel privilege 1 secret CAMBIAR_CLAVE_USUARIO
+interface FastEthernet0/0
+ description ADMIN
+ ip address 10.24.23.1 255.255.255.0
+ no shutdown
+exit
+interface FastEthernet0/1
+ description CLIENTES
+ ip address 10.24.88.1 255.255.255.0
+ no shutdown
+exit
+line console 0
+ exec-timeout 0 0
+exit
+line aux 0
+ exec
+exit
+line vty 0 4
+ login local
+ transport input telnet ssh
+ exec-timeout 0 0
+exit
+cdp run
+no service tcp-keepalives-in
+no service tcp-keepalives-out
+ip ssh time-out 120
+ip ssh authentication-retries 5
+end
+! Crear claves por consola: configure terminal
+! crypto key generate rsa
+! Responder 2048 cuando pregunte el modulo. Luego end.
+! NO fijar ip ssh version 2 todavia: lo hara el script.
+! Guardar al terminar: copy running-config startup-config
