@@ -1,6 +1,6 @@
 # Video demostrativo
 
-**Pendiente de grabar y subir a YouTube.** Sustituir esta línea por el enlace del video (máximo 10 minutos).
+#(https://youtu.be/rwQ6xQ5vtus)
 
 # Hardening de Cisco IOS 12 en GNS3
 
