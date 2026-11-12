@@ -17,6 +17,19 @@ ping -c 3 10.24.23.1
 
 No se necesita la interfaz NAT `eth1` para demostrar el laboratorio. Se utilizó temporalmente para instalar dependencias.
 
+### Kali abierta en VMware, pero detenida en GNS3
+
+Si GNS3 muestra `KALI-ADMIN` detenido aunque su escritorio esté abierto, y al iniciarlo aparece `The VM is already running in VMware`, la máquina está fuera del ciclo de arranque de GNS3. La IP puede ser correcta y aun así no existir la conexión al switch del laboratorio.
+
+Guardar el trabajo de Kali y apagarla normalmente con `sudo poweroff`. Cuando termine de apagarse, hacer clic derecho en `KALI-ADMIN` dentro de GNS3 y seleccionar **Start**. No volver a encenderla directamente desde VMware. Iniciar sesión de nuevo y comprobar:
+
+```bash
+ping -c 3 10.24.23.1
+nmap -sT -Pn -p 22,23 10.24.23.1
+```
+
+El ping debe responder, TCP 22 debe estar abierto y TCP 23 cerrado. Solo después iniciar `probar_timeout.py`. Un error `NoValidConnectionsError` significa que la sesión SSH no se estableció; no demuestra el cierre por inactividad.
+
 ## Auditar y mostrar
 
 ```bash

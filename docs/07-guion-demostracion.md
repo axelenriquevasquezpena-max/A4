@@ -7,6 +7,7 @@
 ## Preparación fuera de la grabación
 
 - Abrir `A4-CIS-2024-2388` e iniciar los cinco nodos.
+- Iniciar Kali desde su nodo en GNS3. Si ya está encendida en VMware pero GNS3 la muestra detenida, guardar el trabajo, apagarla con `sudo poweroff` y arrancarla desde GNS3. Comprobar ping al router antes de grabar.
 - En Kali, comprobar que el perfil `A4-ADMIN-20242388` está activo y que VPCS tiene `10.24.88.20/24`.
 - Preparar **tres terminales** de Kali: A para la medición de inactividad, B para las pruebas y C para la auditoría.
 - En A y C ejecutar:

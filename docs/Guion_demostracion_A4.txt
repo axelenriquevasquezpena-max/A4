@@ -10,6 +10,9 @@ PREPARACIÓN FUERA DE LA GRABACIÓN
 ============================================================
 
 1. Abrir A4-CIS-2024-2388 en GNS3 e iniciar los cinco nodos.
+   Kali debe iniciarse desde GNS3. Si está encendida en VMware pero
+   su nodo aparece detenido, guardar el trabajo, apagarla con
+   sudo poweroff y arrancarla desde GNS3. Probar ping al router.
 2. Comprobar que Kali tiene 10.24.23.10 y VPCS 10.24.88.20.
 3. Preparar tres terminales de Kali:
    A: medición de inactividad.
