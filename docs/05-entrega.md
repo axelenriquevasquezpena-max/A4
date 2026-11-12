@@ -1,21 +1,12 @@
 # 5. Video y entrega
 
-## Guion de máximo 10 minutos
+## Guion: solo demostración del objetivo de seguridad
 
-| Tiempo | Demostración |
-|---|---|
-| 00:00–00:35 | Cara y voz, nombre/matrícula, fecha y hora visibles |
-| 00:35–01:20 | Topología real, direccionamiento y propósito |
-| 01:20–02:10 | Mostrar Nmap previo guardado, identificándolo como histórico; Telnet estaba disponible |
-| 02:10–03:10 | Ejecutar auditoría actual sin cambios y compararla con el informe inicial |
-| 03:10–04:30 | Mostrar informe real de aplicación; ejecutar apply otra vez y comprobar idempotencia |
-| 04:30–05:40 | Nmap posterior, nueva sesión SSH, ping conservado |
-| 05:40–07:00 | `show ip ssh`, VTY, AUX, CDP y keepalives |
-| 07:00–08:20 | Evidencia de timeout ya capturada y segunda auditoría |
-| 08:20–09:20 | Running-configs, controles y documentación en GitHub |
-| 09:20–09:50 | Conclusión basada en resultados reales |
+**Duración objetivo: 7–8 minutos; máximo absoluto: 10 minutos.**
 
-Grabar con OBS o herramienta equivalente, cámara y micrófono habilitados. No hace falta esperar cinco minutos en vivo: realizar antes la prueba de inactividad, mostrar su evidencia y explicar qué se observó. No presentar una ejecución grabada como si fuera una ejecución distinta.
+Usar el [guion detallado con comandos y narración](07-guion-demostracion.md). El video muestra pruebas sobre la topología funcionando: acceso SSH autorizado, Telnet bloqueado, enrutamiento conservado, controles efectivos y cierre real de una sesión inactiva. La medición de cinco minutos corre en paralelo con las demás demostraciones.
+
+Mantener cámara y micrófono habilitados durante la demostración. Mostrar fecha y hora al comenzar y terminar. Preparar las ventanas y las credenciales antes de grabar; no mostrar contraseñas ni archivos privados.
 
 Subir a YouTube, comprobar acceso desde una ventana sin sesión y colocar el enlace al principio del README. Cada infraestructura adicional necesitaría su propio repositorio y video; esta propuesta contiene una sola infraestructura.
 

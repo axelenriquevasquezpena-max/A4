@@ -49,6 +49,7 @@ flowchart LR
 4. [Pruebas y evidencias](docs/04-pruebas.md)
 5. [Video y entrega](docs/05-entrega.md)
 6. [Uso del laboratorio ya instalado](docs/06-uso-instalado.md)
+7. [Guion del video: demostración en vivo, 7–8 minutos](docs/07-guion-demostracion.md)
 
 ## Herramienta
 
