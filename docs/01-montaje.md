@@ -13,7 +13,7 @@ De `2024-2388` se toman `24`, `23` y `88`. Se utiliza el bloque privado 10.0.0.0
 
 ## Crear y conectar
 
-**En el equipo de Axel, estos pasos de creación y cableado ya están realizados.** Abrir `A4-CIS-2024-2388` en GNS3 según [estas instrucciones](../gns3/README.md) y continuar desde el paso 5. Los pasos 1–4 sirven para reproducir el diseño en otro proyecto.
+**En el equipo de Axel, el montaje y el hardening ya están realizados.** Para utilizarlo, consultar [uso instalado](06-uso-instalado.md). Los pasos siguientes sirven para reproducir el diseño desde cero; no volver a pegar el bootstrap sobre el router ya endurecido.
 
 1. Crear proyecto `Axel-2024-2388-CIS-IOS12`.
 2. Arrastrar un **c2691**, dos **Ethernet switch**, **Kali Linux** y **VPCS**.
@@ -63,5 +63,7 @@ ssh -oKexAlgorithms=+diffie-hellman-group14-sha1 -oHostKeyAlgorithms=+ssh-rsa -c
 ```
 
 No modificar globalmente `/etc/ssh/ssh_config`. Netmiko/Paramiko negocia de forma independiente; un fallo de conexión se informa como error, no como incumplimiento CIS. Mantener la consola de GNS3 abierta durante la primera aplicación.
+
+**Compatibilidad comprobada:** Paramiko 5 retiró los intercambios SHA-1 que ofrece esta imagen IOS 12.4 y devolvió `no acceptable kex algorithm` en la primera conexión real. `requirements.txt` fija Paramiko 3.5.x dentro del entorno virtual del laboratorio. Esto permite administrar la imagen histórica; SSHv2 no elimina sus limitaciones criptográficas.
 
 Capturar la topología real y guardarla como `docs/evidencias/01-topologia.png`. Exportar el proyecto portable sin imágenes ni secretos si se desea incluirlo.

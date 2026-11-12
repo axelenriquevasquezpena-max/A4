@@ -1,0 +1,8 @@
+{
+  "started_utc": "2026-11-12T04:32:16.665817+00:00",
+  "configured_timeout_seconds": 300,
+  "keepalive": false,
+  "closed_by_server": true,
+  "elapsed_wall_seconds": 300.59,
+  "ended_utc": "2026-11-12T04:37:17.250970+00:00"
+}

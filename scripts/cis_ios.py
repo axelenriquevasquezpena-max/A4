@@ -123,7 +123,8 @@ def process_device(device, credentials, mode, run_id, connector, root=ROOT):
     rawdir.mkdir(parents=True, exist_ok=True)
     publicdir.mkdir(parents=True, exist_ok=True)
     params = dict(device_type="cisco_ios", host=device["host"], port=device.get("port", 22),
-                  conn_timeout=15, auth_timeout=20, banner_timeout=30, **credentials)
+                  conn_timeout=30, auth_timeout=30, banner_timeout=60,
+                  fast_cli=False, global_delay_factor=2, **credentials)
     conn = None
 
     def export(config, stage):
@@ -219,7 +220,7 @@ def write_report(report, directory):
             lines.append("")
         lines += [f"- ERROR: {e}" for e in d["errors"]]
         lines.append("")
-    (directory / "report.md").write_text("\n".join(lines), encoding="utf-8")
+    (directory / "report.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
 def main():

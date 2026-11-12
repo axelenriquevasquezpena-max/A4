@@ -6,9 +6,9 @@
 |---|---|
 | 00:00–00:35 | Cara y voz, nombre/matrícula, fecha y hora visibles |
 | 00:35–01:20 | Topología real, direccionamiento y propósito |
-| 01:20–02:10 | Ping y Nmap previo; Telnet disponible |
-| 02:10–03:10 | Auditoría sin cambios y sus hallazgos |
-| 03:10–04:30 | Aplicar hardening; abrir informe posterior |
+| 01:20–02:10 | Mostrar Nmap previo guardado, identificándolo como histórico; Telnet estaba disponible |
+| 02:10–03:10 | Ejecutar auditoría actual sin cambios y compararla con el informe inicial |
+| 03:10–04:30 | Mostrar informe real de aplicación; ejecutar apply otra vez y comprobar idempotencia |
 | 04:30–05:40 | Nmap posterior, nueva sesión SSH, ping conservado |
 | 05:40–07:00 | `show ip ssh`, VTY, AUX, CDP y keepalives |
 | 07:00–08:20 | Evidencia de timeout ya capturada y segunda auditoría |

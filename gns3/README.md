@@ -13,22 +13,25 @@ Ese es el proyecto de trabajo. El archivo `.gns3` de esta carpeta es una copia d
 ## Qué está creado
 
 - R1-AXEL: Cisco c2691 en GNS3 VM, imagen IOS 12.4 instalada.
-- KALI-ADMIN: plantilla VMware Kali Linux, configurada para usar un clon enlazado.
+- KALI-ADMIN: máquina VMware Kali Linux existente, sin clonación enlazada.
 - SW-ADMIN y SW-CLIENTES: switches Ethernet integrados.
 - PC-CLIENTE: VPCS local.
 - Cuatro enlaces: Kali → switch ADMIN → router → switch CLIENTES → VPCS.
 - Rótulo con matrícula, direccionamiento y objetivo del laboratorio.
 
-Se comprobó la existencia de los cinco nodos y cuatro enlaces mediante la API del servidor. **Todavía no se han configurado ni probado los sistemas invitados.** Las direcciones mostradas en el rótulo son el plan, no direcciones ya aplicadas.
+Los cinco nodos y cuatro enlaces están creados. Router, Kali y VPCS están configurados con las direcciones del diseño. Se ejecutaron auditoría, hardening, Nmap y ping desde Kali; los diez controles pasan y persisten tras reiniciar el router. Véase `docs/04-pruebas.md`.
 
 ## Continuar
 
 1. Tener encendida y conectada la GNS3 VM.
-2. Abrir el proyecto e iniciar los nodos. El primer arranque de Kali puede crear su clon enlazado.
-3. Abrir consola de R1 y aplicar la plantilla `configs/bootstrap-R1.txt` siguiendo `docs/01-montaje.md`; elegir las contraseñas y generar claves RSA.
-4. Configurar las IP de Kali y VPCS según esa guía.
-5. Desde Kali ejecutar la auditoría y después la aplicación del hardening.
-6. Capturar pruebas, subir los informes y running-configs sanitizados y grabar el video.
+2. Abrir el proyecto e iniciar los nodos. Kali usa la máquina existente; no encenderla simultáneamente desde otro proyecto de GNS3.
+3. En esta instalación, las IP, las claves RSA y el hardening ya están guardados. No volver a pegar el bootstrap sobre el router configurado.
+4. En Kali, usar `/home/axel/A4-CIS-2024-2388`, siguiendo `docs/06-uso-instalado.md`.
+5. Ejecutar una auditoría para comprobar el estado actual y grabar la demostración personal.
+
+### Error de clonación corregido
+
+El 12 de noviembre se corrigió `linked_clone: true` a `false`: VMware rechazaba crear un clon porque la Kali original estaba encendida. El proyecto usa ahora esa máquina existente. Se verificó la apertura del proyecto y el arranque de `KALI-ADMIN` después de la corrección. La plantilla de creación también se corrigió.
 
 ## Reproducir la creación
 

@@ -1,0 +1,9 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-12 00:31 -0400
+Nmap scan report for 10.24.23.1
+Host is up (0.053s latency).
+
+PORT   STATE  SERVICE
+22/tcp open   ssh
+23/tcp closed telnet
+
+Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds

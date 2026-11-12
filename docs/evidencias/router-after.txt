@@ -1,0 +1,86 @@
+UTC host: 2026-11-11T17:29:02.744197+00:00
+
+$ show clock
+17:24:22.375 UTC Wed Nov 11 2026
+
+$ show version
+Cisco IOS Software, 2600 Software (C2691-ADVSECURITYK9-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Wed 18-Aug-10 05:35 by prod_rel_team
+
+ROM: ROMMON Emulation Microcode
+ROM: 2600 Software (C2691-ADVSECURITYK9-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+
+R1-AXEL uptime is 9 minutes
+
+System returned to ROM by unknown reload cause - suspect boot_data[BOOT_COUNT] 0x0, BOOT_COUNT 0, BOOTDATA 19
+System restarted at 17:14:50 UTC Wed Nov 11 2026
+System image file is "tftp://255.255.255.255/unknown"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 2691 (R7000) processor (revision 0.1) with 249856K/12288K bytes of memory.
+Processor board ID XXXXXXXXXXX
+R7000 CPU at 160MHz, Implementation 39, Rev 2.1, 256KB L2, 512KB L3 Cache
+2 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+55K bytes of NVRAM.
+
+Configuration register is 0x2102
+
+
+$ show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.24.23.1      YES manual up                    up      
+FastEthernet0/1            10.24.88.1      YES manual up                    up      
+
+$ show ip ssh
+SSH Enabled - version 2.0
+Authentication timeout: 60 secs; Authentication retries: 2
+
+$ show cdp
+% CDP is not enabled
+
+$ show line
+   Tty Typ     Tx/Rx    A Modem  Roty AccO AccI   Uses   Noise  Overruns   Int
+*     0 CTY              -    -      -    -    -      0       0     0/0       -
+     65 AUX   9600/9600  -    -      -    -    -      0       0     0/0       -
+*    66 VTY              -    -      -    -    -      5       0     0/0       -
+     67 VTY              -    -      -    -    -      3       0     0/0       -
+     68 VTY              -    -      -    -    -      1       0     0/0       -
+     69 VTY              -    -      -    -    -      0       0     0/0       -
+
+     70 VTY              -    -      -    -    -      0       0     0/0       -
+
+Line(s) not in async mode -or- with no hardware support: 
+1-64
+ 
+
+$ ping 10.24.88.20
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.24.88.20, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 4/26/36 ms
+
+$ ping 10.24.23.10
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.24.23.10, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 12/28/32 ms

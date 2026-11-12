@@ -6,7 +6,7 @@
 
 **Autor:** Axel Enrique Vasquez Peña · **Matrícula:** 2024-2388 · **Práctica:** A4
 
-**Estado:** topología creada en GNS3 (5 nodos, 4 enlaces); configuración de los equipos, ejecución del hardening y evidencias reales pendientes.
+**Estado:** laboratorio ejecutado; hardening aplicado y guardado. Diez controles pasan también después del reinicio. Video personal pendiente.
 
 ## Propósito
 
@@ -15,6 +15,21 @@ Reducir la exposición del plano de administración de un router: retirar Telnet
 Se utiliza un Cisco c2691, Kali Linux, dos switches Ethernet de GNS3 y un cliente VPCS. El análisis automatizado evalúa **diez recomendaciones seleccionadas**, no el cumplimiento completo del benchmark.
 
 ![Diseño de la topología, no captura de ejecución](docs/img/topologia.svg)
+
+## Resultados reales
+
+| Comprobación | Antes | Después |
+|---|---|---|
+| Controles CIS seleccionados | 0/10 PASS | 10/10 PASS |
+| TCP 23 / Telnet | Abierto | Cerrado |
+| TCP 22 / SSH | Abierto, modo 1.99 | Abierto, SSHv2 |
+| Ping Kali → VPCS | 5/5 respuestas | 5/5 respuestas |
+| Segunda aplicación | — | Sin comandos correctivos |
+| Auditoría tras reinicio | — | 10/10 PASS |
+
+La auditoría sin cambios produjo hashes idénticos del running-config. La prueba de autenticación cerró la conexión tras dos contraseñas incorrectas y cerró una autenticación incompleta a los 60,14 segundos. Las sesiones inactivas finalizaron a los **300,59 s por SSH** y **300,69 s por consola**. [Ver resultados y archivos fuente](docs/04-pruebas.md).
+
+![Captura real del proyecto GNS3 en ejecución](docs/evidencias/01-topologia-real.png)
 
 ```mermaid
 flowchart LR
@@ -33,6 +48,7 @@ flowchart LR
 3. [Auditoría, aplicación y recuperación](docs/03-operacion.md)
 4. [Pruebas y evidencias](docs/04-pruebas.md)
 5. [Video y entrega](docs/05-entrega.md)
+6. [Uso del laboratorio ya instalado](docs/06-uso-instalado.md)
 
 ## Herramienta
 
@@ -51,9 +67,9 @@ Credenciales solicitadas de forma interactiva. Ejecutar desde Kali, con conectiv
 ## Alcance y estado verificable
 
 - Benchmark histórico adecuado a IOS 12; referencia oficial: [NIST, checklist 1127](https://ncp.nist.gov/checklist/1127).
-- La imagen local encontrada se llama `c2691-[2]advsecurityk9-mz.124-25d 1.image`. Confirmar versión real con `show version`.
-- Los diagramas son diseños, las configuraciones iniciales son plantillas y los tests son pruebas de software. No sustituyen evidencia de GNS3.
-- Faltan capturas reales, informes del router, running-configs reales y video. Véase [entrega](docs/05-entrega.md).
+- Imagen: `c2691-[2]advsecurityk9-mz.124-25d 1.image`; versión real confirmada con `show version`: **12.4(25d)**.
+- Los diagramas son diseños; `docs/evidencias/` contiene la captura real y salidas de las pruebas. Los tests unitarios verifican el software y se distinguen de las pruebas del router.
+- Informes reales en `reports/`; running-configs y startup-configs sanitizados en `configs/running/`. Falta grabar el video personal y añadir YouTube al README y al TXT.
 - IOS 12.4 es una plataforma antigua para este laboratorio aislado; estos ajustes no modernizan sus algoritmos criptográficos.
 
 ## Pruebas del software

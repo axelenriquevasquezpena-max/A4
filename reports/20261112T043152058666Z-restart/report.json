@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-11-12T04:31:52.058666+00:00",
+  "mode": "audit",
+  "phase": "restart",
+  "benchmark": "CIS Cisco IOS 12 v4.0.0 (10 selected controls)",
+  "devices": [
+    {
+      "name": "R1-AXEL",
+      "host": "10.24.23.1",
+      "mode": "audit",
+      "before": [
+        {
+          "id": "1.2.2",
+          "title": "Solo SSH en todas las VTY",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "1.2.3",
+          "title": "AUX sin EXEC",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "1.2.7",
+          "title": "Timeout consola <= 10 minutos",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "1.2.9",
+          "title": "Timeout VTY <= 10 minutos",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.1.1.4",
+          "title": "SSH autenticacion <= 60 segundos",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.1.1.5",
+          "title": "SSH reintentos <= 3",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.1.2",
+          "title": "Solo SSHv2",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.2",
+          "title": "CDP desactivado",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.6",
+          "title": "TCP keepalives entrantes",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.7",
+          "title": "TCP keepalives salientes",
+          "status": "PASS",
+          "commands": []
+        }
+      ],
+      "after": [],
+      "planned_commands": [],
+      "errors": [],
+      "saved": false
+    }
+  ]
+}

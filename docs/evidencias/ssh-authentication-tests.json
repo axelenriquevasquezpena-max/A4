@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-11-11T17:30:55.730940+00:00",
+  "attempts": [
+    {
+      "attempt": 1,
+      "exception": "AuthenticationException",
+      "connection_active": true
+    },
+    {
+      "attempt": 2,
+      "exception": "AuthenticationException",
+      "connection_active": false
+    }
+  ],
+  "retry_connection_closed": true,
+  "authentication_timeout": {
+    "closed_by_server": true,
+    "elapsed_wall_seconds": 60.14,
+    "configured_seconds": 60
+  },
+  "ended_utc": "2026-11-11T17:31:58.940302+00:00"
+}

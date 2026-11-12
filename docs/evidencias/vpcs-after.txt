@@ -1,0 +1,24 @@
+ show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 10.24.88.20/24
+GATEWAY     : 10.24.88.1
+DNS         : 
+MAC         : 00:50:79:66:68:00
+LPORT       : 30006
+RHOST:PORT  : 127.0.0.1:30007
+MTU:        : 1500
+
+VPCS>
+ ping 10.24.88.1 -c 3
+84 bytes from 10.24.88.1 icmp_seq=1 ttl=255 time=35.707 ms
+84 bytes from 10.24.88.1 icmp_seq=2 ttl=255 time=27.262 ms
+84 bytes from 10.24.88.1 icmp_seq=3 ttl=255 time=10.269 ms
+
+VPCS>
+ ping 10.24.23.10 -c 3
+84 bytes from 10.24.23.10 icmp_seq=1 ttl=63 time=51.317 ms
+84 bytes from 10.24.23.10 icmp_seq=2 ttl=63 time=64.652 ms
+84 bytes from 10.24.23.10 icmp_seq=3 ttl=63 time=60.887 ms
+
+VPCS>

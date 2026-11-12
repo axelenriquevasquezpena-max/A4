@@ -18,12 +18,12 @@
     "computes": [],
     "drawings": [
       {
-        "drawing_id": "5cc90dda-968c-4abe-baae-ae538d491427",
+        "drawing_id": "2cae84dc-ddb6-48d9-802d-6e5bf610e10f",
         "locked": false,
         "rotation": 0,
-        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1100\" height=\"145\"><rect width=\"1100\" height=\"145\" rx=\"12\" fill=\"#152a43\"/><g fill=\"white\" font-family=\"Arial\" font-size=\"20\"><text x=\"20\" y=\"35\">A4 · CIS IOS 12 · Axel Enrique Vasquez Pena · 2024-2388</text><text x=\"20\" y=\"70\">ADMIN: Kali 10.24.23.10/24 — R1 Fa0/0 10.24.23.1/24</text><text x=\"20\" y=\"100\">CLIENTES: R1 Fa0/1 10.24.88.1/24 — VPCS 10.24.88.20/24</text><text x=\"20\" y=\"130\">Objetivo: SSHv2, sin Telnet, timeout, AUX/CDP desactivados</text></g></svg>",
+        "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1060\" height=\"110\"><rect width=\"1060\" height=\"110\" fill=\"#15344d\"/><text x=\"20\" y=\"35\" font-family=\"Arial\" font-size=\"22\" fill=\"#ffffff\">A4 - CIS IOS 12 - Axel Enrique Vasquez Pena - 2024-2388</text><text x=\"20\" y=\"70\" font-family=\"Arial\" font-size=\"18\" fill=\"#ffffff\">Administracion SSHv2 / Telnet desactivado / Sesiones limitadas / AUX y CDP desactivados</text><text x=\"20\" y=\"95\" font-family=\"Arial\" font-size=\"16\" fill=\"#ffffff\">ADMIN 10.24.23.0/24  --  R1  --  CLIENTES 10.24.88.0/24</text></svg>",
         "x": -500,
-        "y": -225,
+        "y": -260,
         "z": 0
       }
     ],
@@ -144,10 +144,10 @@
         "height": 45,
         "label": {
           "rotation": 0,
-          "style": null,
+          "style": "font-family: Arial;font-size: 12.0;font-weight: bold;fill: #c9e8ff;fill-opacity: 1.0;",
           "text": "R1-AXEL",
-          "x": null,
-          "y": -32
+          "x": -40,
+          "y": -80
         },
         "locked": false,
         "name": "R1-AXEL",
@@ -200,10 +200,10 @@
         "height": 59,
         "label": {
           "rotation": 0,
-          "style": null,
+          "style": "font-family: Arial;font-size: 12.0;font-weight: bold;fill: #c9e8ff;fill-opacity: 1.0;",
           "text": "KALI-ADMIN",
-          "x": null,
-          "y": -40
+          "x": -40,
+          "y": -80
         },
         "locked": false,
         "name": "KALI-ADMIN",
@@ -215,7 +215,7 @@
           "adapter_type": "e1000",
           "adapters": 1,
           "headless": false,
-          "linked_clone": true,
+          "linked_clone": false,
           "on_close": "power_off",
           "usage": "",
           "use_any_adapter": true,
@@ -238,10 +238,10 @@
         "height": 32,
         "label": {
           "rotation": 0,
-          "style": null,
+          "style": "font-family: Arial;font-size: 12.0;font-weight: bold;fill: #c9e8ff;fill-opacity: 1.0;",
           "text": "SW-ADMIN",
-          "x": null,
-          "y": -26
+          "x": -40,
+          "y": -80
         },
         "locked": false,
         "name": "SW-ADMIN",
@@ -318,10 +318,10 @@
         "height": 32,
         "label": {
           "rotation": 0,
-          "style": null,
+          "style": "font-family: Arial;font-size: 12.0;font-weight: bold;fill: #c9e8ff;fill-opacity: 1.0;",
           "text": "SW-CLIENTES",
-          "x": null,
-          "y": -26
+          "x": -40,
+          "y": -80
         },
         "locked": false,
         "name": "SW-CLIENTES",
@@ -398,10 +398,10 @@
         "height": 59,
         "label": {
           "rotation": 0,
-          "style": null,
+          "style": "font-family: Arial;font-size: 12.0;font-weight: bold;fill: #c9e8ff;fill-opacity: 1.0;",
           "text": "PC-CLIENTE",
-          "x": null,
-          "y": -40
+          "x": -40,
+          "y": -80
         },
         "locked": false,
         "name": "PC-CLIENTE",

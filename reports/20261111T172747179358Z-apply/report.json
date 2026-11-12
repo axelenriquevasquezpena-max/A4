@@ -1,0 +1,187 @@
+{
+  "timestamp": "2026-11-11T17:27:47.179358+00:00",
+  "mode": "apply",
+  "phase": "apply",
+  "benchmark": "CIS Cisco IOS 12 v4.0.0 (10 selected controls)",
+  "devices": [
+    {
+      "name": "R1-AXEL",
+      "host": "10.24.23.1",
+      "mode": "apply",
+      "before": [
+        {
+          "id": "1.2.2",
+          "title": "Solo SSH en todas las VTY",
+          "status": "FAIL",
+          "commands": [
+            "line vty 0 4",
+            "transport input ssh",
+            "exit"
+          ]
+        },
+        {
+          "id": "1.2.3",
+          "title": "AUX sin EXEC",
+          "status": "FAIL",
+          "commands": [
+            "line aux 0",
+            "no exec",
+            "exit"
+          ]
+        },
+        {
+          "id": "1.2.7",
+          "title": "Timeout consola <= 10 minutos",
+          "status": "FAIL",
+          "commands": [
+            "line con 0",
+            "exec-timeout 5 0",
+            "exit"
+          ]
+        },
+        {
+          "id": "1.2.9",
+          "title": "Timeout VTY <= 10 minutos",
+          "status": "FAIL",
+          "commands": [
+            "line vty 0 4",
+            "exec-timeout 5 0",
+            "exit"
+          ]
+        },
+        {
+          "id": "2.1.1.1.4",
+          "title": "SSH autenticacion <= 60 segundos",
+          "status": "FAIL",
+          "commands": [
+            "ip ssh time-out 60"
+          ]
+        },
+        {
+          "id": "2.1.1.1.5",
+          "title": "SSH reintentos <= 3",
+          "status": "FAIL",
+          "commands": [
+            "ip ssh authentication-retries 2"
+          ]
+        },
+        {
+          "id": "2.1.1.2",
+          "title": "Solo SSHv2",
+          "status": "FAIL",
+          "commands": [
+            "ip ssh version 2"
+          ]
+        },
+        {
+          "id": "2.1.2",
+          "title": "CDP desactivado",
+          "status": "FAIL",
+          "commands": [
+            "no cdp run"
+          ]
+        },
+        {
+          "id": "2.1.6",
+          "title": "TCP keepalives entrantes",
+          "status": "FAIL",
+          "commands": [
+            "service tcp-keepalives-in"
+          ]
+        },
+        {
+          "id": "2.1.7",
+          "title": "TCP keepalives salientes",
+          "status": "FAIL",
+          "commands": [
+            "service tcp-keepalives-out"
+          ]
+        }
+      ],
+      "after": [
+        {
+          "id": "1.2.2",
+          "title": "Solo SSH en todas las VTY",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "1.2.3",
+          "title": "AUX sin EXEC",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "1.2.7",
+          "title": "Timeout consola <= 10 minutos",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "1.2.9",
+          "title": "Timeout VTY <= 10 minutos",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.1.1.4",
+          "title": "SSH autenticacion <= 60 segundos",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.1.1.5",
+          "title": "SSH reintentos <= 3",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.1.2",
+          "title": "Solo SSHv2",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.2",
+          "title": "CDP desactivado",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.6",
+          "title": "TCP keepalives entrantes",
+          "status": "PASS",
+          "commands": []
+        },
+        {
+          "id": "2.1.7",
+          "title": "TCP keepalives salientes",
+          "status": "PASS",
+          "commands": []
+        }
+      ],
+      "planned_commands": [
+        "line vty 0 4",
+        "transport input ssh",
+        "exit",
+        "line aux 0",
+        "no exec",
+        "exit",
+        "line con 0",
+        "exec-timeout 5 0",
+        "exit",
+        "line vty 0 4",
+        "exec-timeout 5 0",
+        "exit",
+        "ip ssh time-out 60",
+        "ip ssh authentication-retries 2",
+        "ip ssh version 2",
+        "no cdp run",
+        "service tcp-keepalives-in",
+        "service tcp-keepalives-out"
+      ],
+      "errors": [],
+      "saved": true
+    }
+  ]
+}

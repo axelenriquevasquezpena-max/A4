@@ -58,10 +58,10 @@ def main():
 
     template_node("R1-AXEL", "c2691", 0, 0)
     kali = template_node("KALI-ADMIN", "Kali Linux", -450, 0)
-    # Isolate the new project's disk state from the existing Kali VM.
-    if kali["status"] == "stopped" and not kali["properties"].get("linked_clone"):
+    # Use the existing Kali VM: VMware cannot clone a powered-on source VM.
+    if kali["status"] == "stopped" and kali["properties"].get("linked_clone"):
         nodes["KALI-ADMIN"] = api(prefix + "/nodes/" + kali["node_id"], "PUT",
-                                  {"properties": {"linked_clone": True}})
+                                  {"properties": {"linked_clone": False}})
     basic_node("SW-ADMIN", "ethernet_switch", -225, 0)
     basic_node("SW-CLIENTES", "ethernet_switch", 225, 0)
     basic_node("PC-CLIENTE", "vpcs", 450, 0)
@@ -103,7 +103,7 @@ def main():
     final_links = api(prefix + "/links")
     print(json.dumps({"project": NAME, "project_id": project["project_id"], "file": str(source),
                       "repository_copy": str(target), "nodes": len(final_nodes), "links": len(final_links),
-                      "state": "Topologia creada; configuracion de invitados y pruebas pendientes"}, indent=2))
+                      "state": "Topologia verificada; consultar reports/ para resultados CIS"}, indent=2))
 
 
 if __name__ == "__main__":
