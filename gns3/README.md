@@ -1,12 +1,6 @@
 # Proyecto de GNS3 A4
 
-## Abrir en el equipo de Axel
 
-En GNS3 seleccionar **File → Open project** y abrir:
-
-```text
-C:\Users\axele\GNS3\projects\1fce01ae-aa13-4e79-baad-6a8b77da2a8e\A4-CIS-2024-2388.gns3
-```
 
 Ese es el proyecto de trabajo. El archivo `.gns3` de esta carpeta es una copia de su topología para el repositorio, no un paquete portable con máquinas virtuales.
 
