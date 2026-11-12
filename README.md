@@ -1,6 +1,6 @@
 # Video demostrativo
 
-#(https://youtu.be/rwQ6xQ5vtus)
+(https://youtu.be/rwQ6xQ5vtus)
 
 # Hardening de Cisco IOS 12 en GNS3
 
